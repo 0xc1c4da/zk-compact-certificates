@@ -5,10 +5,16 @@ This is a WIP implementation of [Compact Certificates of Collective Knowledge](h
 CC's are useful for proving stake behind a block in consensus and for inter-chain communication, as an alternative to other signature aggregation methods, and they scale to large set of participants with minimal coordination and size costs.
 
 They claim:
-    - aggregate signatures, multisignatures and threshold signatures require more coordination than compact certificates, and grow in size and costs of computation
-        - compact certificates scale, and they can be used regardless of the number of attestors who participated
-        - compact certificates support weighted attestors (ie stake) and allow for threshold verification
-        - compact certificates work with any underlying signature scheme (and, more generally, with any NP statement), whereas other options are specific to the signature scheme
+
+- aggregate signatures, multisignatures and threshold signatures require more coordination than compact certificates, and grow in size and costs of computation
+
+- compact certificates scale, and they can be used regardless of the number of attestors who participated
+
+- compact certificates support weighted attestors (ie stake) and allow for threshold verification
+
+- compact certificates work with any underlying signature scheme (and, more generally, with any NP statement), whereas other options are specific to the signature scheme
+
+     
 
 In the paper, they have future work suggestion of combining SNARKs and compact certificates to prove knowledge of a valid compact certificate (instead of proving validity of attestors’ signatures directly).
 
